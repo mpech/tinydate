@@ -3,10 +3,10 @@ Yet another date parser
 - no deps
 - < 50 lines, <1Kb minified
 
-### status ###
+### statuses ###
 
 ![not minified](https://badge-size.herokuapp.com/mpech/tinydate/master/index.js)
-
+![tests](https://github.com/mpech/tinydate/actions/workflows/nodejs.yml/badge.svg)
 
 ### Usage ###
 
