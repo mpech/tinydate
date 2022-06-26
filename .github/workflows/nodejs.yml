@@ -6,21 +6,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: denoland/setup-deno@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: pnpm install
-      run: pnpm install
-    - name: test cov
-      run: npm run coverage |grep '|' > coverage_result.txt
+        deno-version: vx.x.x
+    - name: deno cov
+      run: deno test --coverage=cov test/index.spec.js && deno coverage cov |grep cover > coverage_result.txt
     - name: Archive code coverage results
       uses: actions/upload-artifact@v3
       with:
