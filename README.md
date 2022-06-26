@@ -5,6 +5,7 @@ Yet another date parser
 
 ### status ###
 
+![not minified](https://badge-size.herokuapp.com/mpech/tinydate/master/index.js)
 
 
 ### Usage ###
