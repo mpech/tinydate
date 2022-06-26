@@ -13,7 +13,8 @@
 		"vitest": "^0.16.0"
 	},
 	"scripts": {
-		"build": "npx esbuild index.js --minify --outfile=dist/index.min.js"
+		"build": "npx esbuild index.js --minify --outfile=dist/index.min.js",
+		"coverage": "npx vitest run --coverage"
 	},
 	"type": "module"
 }

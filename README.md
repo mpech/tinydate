@@ -3,6 +3,10 @@ Yet another date parser
 - no deps
 - < 50 lines, <1Kb minified
 
+### status ###
+
+
+
 ### Usage ###
 
 ```
@@ -17,6 +21,7 @@ Assumes UTC if z present
     const back = parse('21/03/05T12Z', 'YY/MM/DD hh')
     expect(back.getUTCHours()).toBe(12)
 ```
+
 
 ### args ###
 
