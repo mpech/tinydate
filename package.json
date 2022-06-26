@@ -1,0 +1,19 @@
+{
+	"version":"0.0.0",
+	"name": "tinydate",
+	"files": [
+		"index.js",
+		"dist/index.min.js",
+		"package.json",
+		"pnpm-lock.yaml"
+	],
+	"devDependencies": {
+		"c8": "^7.11.3",
+		"esbuild": "^0.14.47",
+		"vitest": "^0.16.0"
+	},
+	"scripts": {
+		"build": "npx esbuild index.js --minify --outfile=dist/index.min.js"
+	},
+	"type": "module"
+}
