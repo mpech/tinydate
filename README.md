@@ -1,7 +1,10 @@
+# Tinydate
+
 Yet another date parser
 
 - no deps
-- < 50 lines, <1Kb minified
+- < 50 lines, <1kB minified
+
 
 ### statuses ###
 
@@ -51,3 +54,10 @@ Assumes UTC if z present
 `options.utc`: `true` will assume input `str` has no local timezone offset
 
 `options.utc`: `false` will assume input `str` is expressed in local timezone (even though z present)
+
+
+### dev ###
+
+`deno test --watch test/index.spec.js`
+
+`pnpm test && pnpm run build`

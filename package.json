@@ -14,7 +14,8 @@
 	},
 	"scripts": {
 		"build": "npx esbuild index.js --minify --outfile=dist/index.min.js",
-		"coverage": "npx vitest run --coverage"
+		"coverage": "npx vitest run --coverage",
+		"test": "deno test test/index.spec.js"
 	},
 	"type": "module"
 }

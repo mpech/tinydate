@@ -1,0 +1,15 @@
+name: Deno CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: denoland/setup-deno@v1
+      with:
+        deno-version: vx.x.x
+    - name: deno cov
+      run: deno test --coverage=cov test/index.spec.js && deno coverage cov |grep cover
